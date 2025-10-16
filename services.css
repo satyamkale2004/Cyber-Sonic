@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2dbba;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f3cc6a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Reduced padding to decrease height */
+    align-items: center;
+    height: 50px; /* Adjusted to decrease height */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin-top: 150px; /* Decreased margin to reduce space */
+    font-size: 50px; /* Increased size */
+    font-family: 'Merriweather', serif; /* Added stylish serif font */
+    font-weight: bold; /* Made font weight bold */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9), 0 0 25px #fdfcfb;
+    font-family: 'Serif', serif;
+}
+
+/* Services Grid */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 50px auto; /* Decreased margin to reduce space */
+}
+
+.service-box {
+    background-color: rgb(245, 208, 88); /* Mustard Yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8); /* Dark Black Shadow */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 1);
+}
+
+/* Blur background effect */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: none;
+    z-index: 999;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+/* Popups */
+.popup {
+    display: none;
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Developers Popup */
+#developersPopup {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Adjusted width */
+}
+
+.developer-info {
+    display: flex;
+    justify-content: space-between; /* Ensure developers stay in one row */
+    gap: 20px;
+    align-items: stretch; /* Ensure all developers are in the same line */
+    flex-wrap: nowrap; /* No wrapping to keep all in one line */
+}
+
+.developer {
+    text-align: center;
+    flex: 1;
+}
+
+.developer img {
+    width: 100px;
+    height: 100px; /* Square shape */
+    border-radius: 0; /* Remove border-radius for square */
+    object-fit: cover;
+}
+
+.developer p {
+    margin: 5px 0;
+}
+
+.developer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.developer a:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+/* Contact Us Popup */
+#contactPopup {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Adjusted width */
+}
+
+
+
+
+
+
+
+

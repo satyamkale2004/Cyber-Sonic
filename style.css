@@ -1,0 +1,209 @@
+/* General Styling */
+body {
+    background-color: #2c2c2c; /* Dark grey background */
+    color: #f0f0f0; /* Light text for better contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire admin panel */
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #ff6600; /* A standout orange for the title */
+}
+
+/* Navigation Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #444; /* Dark grey button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tab-btn:hover {
+    background-color: #ff6600; /* Hover with an orange highlight */
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+.section {
+    background-color: #3a3a3a; /* Slightly lighter grey for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input {
+    flex: 1; /* Flexible input fields */
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #ff6600; /* Highlight on focus */
+    box-shadow: 0 0 5px #ff6600;
+}
+
+form button {
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #ff6600; /* Orange hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ff6600;
+}
+
+/* Search Bar Styling */
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#searchBar:focus {
+    outline: none;
+    border-color: #ff6600; /* Orange highlight */
+    box-shadow: 0 0 5px #ff6600;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    animation: fadeInUp 0.6s ease; /* Animates table rows */
+}
+
+table th {
+    background-color: #3a3a3a;
+    color: #ff6600; /* Header with orange text */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tbody tr:hover {
+    background-color: #555; /* Highlight on hover */
+    cursor: pointer;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none; /* Remove bottom border for last row */
+}
+
+/* Button Styles Inside Table */
+table tbody button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+table tbody button:hover {
+    background-color: #ff6600; /* Orange hover effect */
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px #ff6600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap; /* Adjust tabs for smaller screens */
+    }
+
+    form input {
+        flex: 100%; /* Input fields take full width */
+    }
+}

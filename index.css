@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    padding-top: 60px; /* To prevent content overlap with fixed navbar */
+}
+
+/* Background Overlay with Blur */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px); /* Apply blur to the background overlay */
+    z-index: -1;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(235, 184, 64, 0.9);
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #edda72;
+    color: #fff;
+}
+
+/* Centered Welcome Section */
+.welcome-section {
+    text-align: center;
+    color: #eae1e1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added padding to prevent overlap */
+}
+
+.welcome-text {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #dab70b;
+}
+
+.cyber-sonic {
+    font-family: 'Serif', serif;
+    font-size: 90px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0 0 25px #ffae00;
+    color: #FFD700;
+    animation: fadeInDown 1s ease;
+}
+
+.solution-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #121211;
+    animation: fadeInUp 1s ease;
+}
+
+.join-now-btn {
+    background-color: #c05919;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased size */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px; /* Increased font size */
+    margin-top: 20px; /* Add some margin top to separate from quote */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.join-now-btn:hover {
+    background-color: #ff8c42;
+    transform: scale(1.1);
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 1001;
+    display: none;
+    width: 90%; /* Increased width */
+    max-width: 800px; /* Increased max width */
+    background-color: rgb(238, 244, 245); /* Sky blue panel */
+}
+
+.popup-content {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(246, 244, 240); /* Sky blue panel */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ec0808; /* Cross mark color */
+}
+
+.developer-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.developer img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    /* Removed border */
+}
+
+/* Updated sections container to align sections side by side */
+.sections-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 10px auto;
+}
+
+/* Container for side-by-side layout */
+.container {
+    display: flex;
+    justify-content: space-between; /* Spaces sections evenly */
+    align-items: stretch; /* Aligns items properly */
+    width: 100%; /* Full width */
+    gap: 6px; /* Adds space between sections */
+    margin-top: 10px; /* Adds spacing from the top */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers content */
+    align-items: center;
+    gap: 10px; /* Slight gap reduction */
+    padding: 7px;
+}
+
+.Our-services, .about-us {
+    background-color:  #e8f1f2;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    width: 50%; /* Ensures equal width */
+    box-shadow: 0px 10px 20px rgba(225, 222, 222, 0.3);
+}
+
+/* Terms & Conditions */
+.terms-conditions {
+    background-color:   #e8f1f2;
+    padding: 50px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1800px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; /* Added margin bottom to prevent overlap */
+}
+
+/* Steps for accessing service */
+.accessing-service {
+    background-color:  #e8f1f2;
+    padding: 50px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1800px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; /* Added margin bottom to prevent overlap */
+}
+
+
+/* Login Form Styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px; /* Added padding to prevent overlap */
+}
+
+.login-panel {
+    background-color: rgba(239, 225, 153, 0.9); /* Semi-transparent white panel */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Removed border */
+}
+
+.login-panel h2 {
+    margin-bottom: 20px;
+    color: #f0db80;
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.login-panel button {
+    width: 100%;
+    padding: 10px;
+    background-color: #eae2de;
+    color: #d66161;
+    border: none;
+}

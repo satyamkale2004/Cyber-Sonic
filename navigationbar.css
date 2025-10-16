@@ -1,0 +1,66 @@
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2b529;
+    color: #000;
+    position: fixed; /* Fixed navbar */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background:  #e8c156; /* Slight transparency */
+}
+
+.logo {
+    font-family: 'Serif', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a, .popup-btn, .auth-btn {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eab918;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover, .popup-btn:hover, .auth-btn:hover {
+    background-color: #e1b23b;
+    color: #fff;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.profile-icon:hover {
+    opacity: 0.8;
+}
+
+/* Specific Styling for Login and Register Buttons */
+.auth-btn {
+    margin-left: 10px;
+}
